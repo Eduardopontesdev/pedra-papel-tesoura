@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e6eb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem 5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.results div{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    img {
+        width: 100px;
+    }
+}
+
+.user-result {
+    transform: rotate(90deg);
+}
+
+.computer-result {
+    transform: rotate(-90deg) rotateY(-180deg);
+}
+
+.result-text {
+text-align: center;
+color: #7d2ae8;
+font-weight: bold;
+margin: 1.5rem 0;
+font-size: 2rem;
+
+}
+
+.container.start .user-result {
+    animation: userAnim 0.7s ease infinite;
+}
+
+.container.start .computer-result {
+    animation: computerAnim 0.7s ease infinite;
+}
+
+@keyframes userAnim {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes computerAnim {
+    50% {
+        transform: rotate(-10deg) rotateY(-180deg);
+    }
+}
+
+.options {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 50px;
+
+    p {
+        color: #7d2ae8;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.option-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    
+    img {
+        width: 50px;
+    }
+}
+
+.option-image:hover {
+    opacity: 1;
+}
+
+.option-image:active {
+    opacity: 1;
+}
+
+.pontuacao {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pontuacao h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #7d2ae8;
+    padding: 1rem;
+}
+
+.pontuacao .box {
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.pontuacao .box .box-pontos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pontuacao .box .box-pontos .pontos-user {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #7d2ae8;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.pontuacao .box .box-pontos .pontos-computer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #7d2ae8;
+    padding: 1rem;
+    margin: 1rem;
+}
+.divisor {
+    font-size: 4rem;
+    color: #7d2ae8;
+    font-weight: bold;
+}
