@@ -22,12 +22,12 @@ const computerImages = [
 const vencendor = {
   RR: "empate",
   RS: "Você",
-  RP: "computador",
+  RP: "Computador",
   SS: "empate",
   SP: "Você",
-  SR: "computador",
+  SR: "Computador",
   PP: "empate",
-  PS: "computador",
+  PS: "Computador",
   PR: "Você",
 };
 
