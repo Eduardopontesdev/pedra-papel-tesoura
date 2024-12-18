@@ -27,8 +27,8 @@ const vencendor = {
   SP: "Você",
   SR: "computador",
   PP: "empate",
-  PS: "Você",
-  PR: "computador",
+  PS: "computador",
+  PR: "Você",
 };
 
 //funcao principal
